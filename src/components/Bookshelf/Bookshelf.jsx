@@ -55,4 +55,4 @@ return (
 );
 };
 
-export default Bookshelf;
+export default BookShelf;
