@@ -2,17 +2,25 @@ import { useState } from 'react';
 
 const BookShelf = () => {
 
+// creating a set of books as default
+
 const [books, setBooks] = useState([
   { title: 'Fourth Wing', author: 'Rebecca Yarros' },
   { title: 'The Lion, the Witch and the Wardrobe', author: 'C.S. Lewis' },
 ]);
 
+// creating a new book
+
 const [newBook, setnewBook] = useState({ title: '', author: '' });
+
+// handler to create the new book
 
 const handleInputChange = (event) => {
     const { name, value } = event.target;
     setNewBook({ ...newBook, [name]: value });
   };
+
+// adding the new book to the bookshelf
 
 const handleSubmit = (event) => {
     event.preventDefault();
