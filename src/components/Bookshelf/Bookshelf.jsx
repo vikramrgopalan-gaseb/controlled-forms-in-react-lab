@@ -11,7 +11,7 @@ const [books, setBooks] = useState([
 
 // creating a new book
 
-const [newBook, setnewBook] = useState({ title: '', author: '' });
+const [newBook, setNewBook] = useState({ title: '', author: '' });
 
 // handler to create the new book
 
